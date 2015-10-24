@@ -1,0 +1,15 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "rules": {
+    "no-use-before-define": [0],
+    "no-var": [2],
+    "curly": [2, "multi-line"],
+    "no-console": [0]
+  }
+}

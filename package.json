@@ -1,0 +1,30 @@
+{
+  "name": "web-booth",
+  "version": "1.0.0",
+  "description": "Webcam effects in the browser",
+  "scripts": {
+    "start": "budo index.js:bundle.js --live -- -t babelify -t glslify | garnish",
+    "build": "browserify index.js -t babelify -t glslify | uglifyjs -cm > bundle.js"
+  },
+  "private": true,
+  "dependencies": {
+    "browserify": "^11.2.0",
+    "budo": "^5.1.5",
+    "babelify": "^6.4.0",
+    "garnish": "^3.2.1",
+    "glslify": "^2.3.1",
+    "three": "^0.73.0",
+    "getusermedia": "^1.3.5",
+    "three-effectcomposer": "^0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwhitfieldseed/web-booth.git"
+  },
+  "author": "Joe Whitfield-Seed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jwhitfieldseed/web-booth/issues"
+  },
+  "homepage": "https://github.com/jwhitfieldseed/web-booth#readme"
+}
